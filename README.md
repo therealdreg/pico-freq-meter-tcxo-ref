@@ -71,6 +71,18 @@ Download the latest firmware from the releases section:
 
 https://github.com/therealdreg/pico-freq-meter-tcxo-ref/releases/latest
 
+# Download clock.uf2 (target PCB)
+
+For the custom PCB with RP2350 microcontroller, download the firmware from:
+
+## RP2040 (PICO BOARD)
+
+https://github.com/therealdreg/pico-freq-meter-tcxo-ref/tree/main/clock_firm_rp2040/build
+
+## Download RP2350 (PICO2 BOARD)
+
+https://github.com/therealdreg/pico-freq-meter-tcxo-ref/tree/main/clock_firm_rp2350/build
+
 # Flashing the firmware
 
 To flash the firmware, you need to put the Raspberry Pi Pico in bootloader mode. To do this, press and hold the button while connecting the USB cable to the PC. The Pico will appear as a USB mass storage device. Drag and drop the "pico_freq_meter_tcxo_ref.uf2" firmware file to the Pico.
