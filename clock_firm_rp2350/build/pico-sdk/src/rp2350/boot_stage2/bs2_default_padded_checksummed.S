@@ -1,4 +1,4 @@
-// Padded and checksummed version of: C:/Users/regue/hconctf2026/clock/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/dreg/pico-freq-meter-tcxo-ref/clock_firm_rp2350/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

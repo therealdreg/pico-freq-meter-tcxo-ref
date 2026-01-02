@@ -6,6 +6,15 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+# Set Ninja as the build program
+if(NOT CMAKE_MAKE_PROGRAM)
+    if(WIN32)
+        set(CMAKE_MAKE_PROGRAM "${CMAKE_C_COMPILER_AR}")
+    else()
+        set(CMAKE_MAKE_PROGRAM "$ENV{HOME}/.pico-sdk/ninja/v1.12.1/ninja")
+    endif()
+endif()
+
 # Initialise pico_sdk from installed location
 # (note this can come from environment, CMake cache etc)
 
@@ -54,4 +63,6 @@ target_include_directories(clock PRIVATE
 )
 
 pico_add_extra_outputs(clock)
+
+set(ENV{PATH} "/home/dreg/.pico-sdk/toolchain/14_2_Rel1/bin:${PATH}")
 

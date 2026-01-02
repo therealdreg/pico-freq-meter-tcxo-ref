@@ -68,6 +68,8 @@ int main()
        gpio_put(19, false);
        gpio_put(18, false);
 
+       printf("GPIO pins 18, 19, 20 set to LOW (connect oscilloscope ground to spring clip)\n");
+
        while (true)
        {
               printf("\n[clock_out_gpio21] XOSC / %.1f --> %.3f MHz GPIO %d (sniff '-')\n", divisor, 12.0f / divisor,
